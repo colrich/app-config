@@ -3,3 +3,7 @@ logging:
     io:
       pivotal: DEBUG
 
+eureka: # <--- ADD NEW SECTION
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8080}
